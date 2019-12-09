@@ -140,6 +140,11 @@ public class MainActivity extends AppCompatActivity {
                 int current = Integer.parseInt(calculatorText.getText().toString());
                 calculate(operator, current);
                 break;
+            case R.id.cos_button:
+                double cosValue = Math.cos((double) Integer.parseInt(calculatorText.getText().toString()));
+                calculatorText.setText(cosValue+"");
+                break;
+
 
 
         }
